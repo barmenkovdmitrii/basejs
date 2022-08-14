@@ -1,4 +1,5 @@
 function solveEquation(a, b, c) {
+  // тестируем загрузку
   let arr = [];
   let discriminant = Math.pow(b, 2) - 4 * a * c;
 
