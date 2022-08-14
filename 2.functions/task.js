@@ -1,6 +1,15 @@
 // Задание 1
+let arr = [1,3,5];
+
 function getArrayParams(arr) {
   let min, max, sum, avg;
+
+  for (let i = 0; i < arr.length; i++) {
+   if ( arr[i] < max) {
+     max = arr[i];
+   }
+
+  }
 
   // Ваш код
 
