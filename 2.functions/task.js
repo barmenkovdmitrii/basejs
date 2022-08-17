@@ -31,9 +31,14 @@ function worker(arr) {
 }
 
 function makeWork(arrOfArr, func) {
-  let max;
+  let max = func(arrOfArr[0]);
 
   // Ваш кода
+  for (let i = 0; i > arrOfArr.length; i++) {
+    if (func(arrOfArr[i]) > max) {
+      max = func(arrOfArr[i]);
+    }
+  }
   // for ...
 
   return max;
