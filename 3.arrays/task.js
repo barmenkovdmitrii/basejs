@@ -6,6 +6,7 @@ function compareArrays(arr1, arr2) {
   return result; // boolean
 }
 
+
 function advancedFilter(arr) {
   let resultArr;
 
