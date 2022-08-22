@@ -54,6 +54,6 @@ function worker2(arr) {
       min = arr[i];
     }
   }
-  return Math.abs(max - min)
+  return Math.abs(max - min);
   // Ваш код
 }
