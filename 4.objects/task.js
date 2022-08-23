@@ -1,5 +1,10 @@
 function Student(name, gender, age) {
     // Ваш код
+   let userStudent = {
+       name,
+       gender,
+       age,
+   }
 
 }
 
