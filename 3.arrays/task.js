@@ -8,7 +8,7 @@ function compareArrays(arr1, arr2) {
 
 
 function advancedFilter(arr) {
-  let resultArr;
+  let resultArr = arr.filter((number) => namber > 0).filter((number) => number % === 3).map();
 
   // Ваш код
 
