@@ -7,7 +7,7 @@ function Student(name, gender, age) {
 }
 
 Student.prototype.setSubject = function (subjectName) {
-  //ваш код
+  //добавление предмета
     this.subjectName = subjectName;
 }
 
@@ -17,10 +17,9 @@ Student.prototype.addMark = function (mark) {
         return
     }
     this.marks.push(mark)
+    // добавление оценок в массив
 }
 
-
-}
 
 Student.prototype.addMarks = function (mark1,mark2,mark3...) {
     this.marks =
