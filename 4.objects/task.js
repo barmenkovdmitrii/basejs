@@ -27,8 +27,9 @@ Student.prototype.addMarks = function (...marks) {
         return
     }
     this.marks.push(...marks)
-
+// добавление массива оценок
 }
+
 
 Student.prototype.getAverage = function (){
     this.getAverage = console.log();
@@ -43,10 +44,5 @@ Student.prototype.getAverage = function (){
  userStudent2.addMark(5);
 
 
-if(this.marks === undefined){
-    // добавить первую оценку
-} else {
-    // добавить вторую и последующие оценки в массив
-}
 
 // ваш код для остальных методов
