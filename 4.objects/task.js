@@ -21,8 +21,12 @@ Student.prototype.addMark = function (mark) {
 }
 
 
-Student.prototype.addMarks = function (mark1,mark2,mark3...) {
-    this.marks =
+Student.prototype.addMarks = function (...marks) {
+    t  if (!this.marks?.length) {
+        this.marks = [...marks]
+        return
+    }
+    this.marks.push(...marks)
 
 }
 
