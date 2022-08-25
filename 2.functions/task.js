@@ -13,6 +13,12 @@ function getArrayParams(arr) {
     sum +=  arr[i];
   }
 
+  max1 = Math.max(...arr);
+
+  min1  = Math.min(...arr);
+
+  avg1 = Number((arr.reduce((acc,sum) => acc + sum, 0) / arr.length).toFixed(2));
+
   avg = Number((sum / arr.length).toFixed(2));
   // Ваш код
 
