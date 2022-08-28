@@ -31,11 +31,17 @@ Student.prototype.addMarks = function (...marks) {
 }
 
 
-Student.prototype.getAverage = () => {
-    this.getAverage = console.log();
+Student.prototype.getAverage = function() {
+   return this.marks.reduce((acc, item) => acc + item, 0) / this.marks.length;
 
 }
 // Среднее арифмитическое
+
+Student.prototype.exclude = function (reason) {
+    delete this.subject;
+    delete this.marks;
+    this.excluded = reason;
+}
 
  let userStudent1 = new Student("oleg", "man", 22);
  let userStudent2 = new Student("Vasya","man",32);
