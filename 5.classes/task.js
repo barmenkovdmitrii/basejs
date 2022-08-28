@@ -7,9 +7,10 @@ class PrintEditionItem {
         this.type = null;
 
     }
+    fix (){
+        this.state * 1.5;
+    }
 
 }
 
-PrintEditionItem.prototype.fix = function (){
-    return this.state * 1.5;
-}
+
