@@ -31,7 +31,7 @@ Student.prototype.addMarks = function (...marks) {
 }
 
 
-Student.prototype.getAverage = function (){
+Student.prototype.getAverage = () => {
     this.getAverage = console.log();
 
 }
