@@ -10,7 +10,18 @@ class PrintEditionItem {
     fix (){
         this.state * 1.5;
     }
+    set state (value) {
+        this.state = value;
+        if (this.state <= 0) {
+            this._state = 0;
+            return
+        } else
+        if (this.state >= 100) {
+            this._state = 100;
+            return
+        } this._state = value;
 
+    }
 }
 
 
