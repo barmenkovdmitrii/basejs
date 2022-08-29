@@ -10,8 +10,12 @@ class PrintEditionItem {
     fix (){
         this.state * 1.5;
     }
+
+    get state () {
+        return this._state;
+    }
+
     set state (value) {
-        this.state = value;
         if (this.state <= 0) {
             this._state = 0;
             return
@@ -24,4 +28,11 @@ class PrintEditionItem {
     }
 }
 
+class Magazine extends PrintEditionItem {
+    constructor (type) {
+        super();
+        this.type = "magazine";
+    }
+
+}
 
