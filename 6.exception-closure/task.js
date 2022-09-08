@@ -31,8 +31,9 @@ class Triangle {
     }
 
     getArea () {
-        cost p = this.getPerimeter * 0.5;
-        return Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c).toFixed(3));
+        const p = this.getPerimeter() * 0.5;
+        return parseFloat(Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c).toFixed(3)));
 
     }
 }
+
