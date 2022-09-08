@@ -37,3 +37,22 @@ class Triangle {
     }
 }
 
+const getTriangle = (a,b,c) => {
+let triangle;
+
+try {
+   triangle = new Triangle(a,b,c);
+}
+catch (e) {
+    triangle = new Object();
+    triangle.getArea = () => {
+        return "Ошибка! Треугольник не существует";
+    }
+    triangle.getPerimeter = () => {
+        return "Ошибка! Треугольник не существует";
+    }
+}
+finally {
+    return triangle;
+}
+}
