@@ -32,7 +32,7 @@ class Triangle {
 
     getArea () {
         cost p = this.getPerimeter * 0.5;
-        return Math. p * (p - this.a) * (p - this.b) * (p - this.c);
+        return Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c).toFixed(3));
 
     }
 }
