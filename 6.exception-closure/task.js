@@ -17,13 +17,17 @@ const validateCount = (count) => {
 
 class Triangle {
     constructor(a,b,c) {
-        if (a + b > c || a + c > b || b + c > a) {
-            throw new
+        if (a + b < c || a + c < b || b + c < a) {
+            throw new SyntaxError("Треугальника с такими сторонами не существует")
+        } else {
+            this.a = a;
+            this.b = b;
+            this.c = c;
         }
 
     }
 
-    getPerimeter () {
-        this
+    getPerimeter (a,b,c) {
+        return let p = a + b + c;
     }
 }
