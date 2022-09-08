@@ -24,10 +24,15 @@ class Triangle {
             this.b = b;
             this.c = c;
         }
-
     }
 
-    getPerimeter (a,b,c) {
-        return let p = a + b + c;
+    getPerimeter () {
+        return this.a + this.b + this.c;
+    }
+
+    getArea () {
+        cost p = this.getPerimeter * 0.5;
+        return Math. p * (p - this.a) * (p - this.b) * (p - this.c);
+
     }
 }
